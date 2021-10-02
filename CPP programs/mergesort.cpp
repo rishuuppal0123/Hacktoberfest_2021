@@ -48,10 +48,15 @@ for (i = low; i < k; i++) {
 }
 int main()
 {
-    int a[12]={21,11,10,30,4,7,9,20,18,1,15,8};
-    int n=sizeof(a)/sizeof(a[0]);
+   cout<<"Enter array of size 10:\n";
+   int a[10],n=10;
+
+   for(int i=0;i<10;i++)
+      cin>>a[i];
+   //  int a[12]={21,11,10,30,4,7,9,20,18,1,15,8};
+   //  int n=sizeof(a)/sizeof(a[0]);
     cout<<"Initial array is\n";
-    for(int i=0;i<n;i++)
+    for(int i=0;i<10;i++)
       cout<<a[i]<<" ";
     cout<<endl;
     mergesort(a,0,n-1);
